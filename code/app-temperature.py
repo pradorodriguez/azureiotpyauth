@@ -10,7 +10,7 @@ from azure.iot.device import Message
 
 
 ###  IOTHUB AUTHENTICATION - Uncomment the authentication method you want to use
-## x509 Authentication - Comment out the following lines if you want to use SAS authentication
+## x509 Authentication
 ## Create x509 Iot device class instance with the location of the SSL certificate and private key
     ## https://learn.microsoft.com/en-us/python/api/azure-iot-device/azure.iot.device.x509?view=azure-python
 # x509 = X509(
@@ -24,13 +24,12 @@ from azure.iot.device import Message
 #     hostname="<iothub-hostname-fqdn>",
 #     device_id="<device-id-in-iothub>"
 # )
-
-## SAS Authentication - Comment out the following lines if you want to use x509 authentication
+## SAS Authentication
 ## Create IoT device client instance using SAS authentication (device connection string)
     ## https://learn.microsoft.com/en-us/python/api/azure-iot-device/azure.iot.device.aio.iothubdeviceclient?view=azure-python#azure-iot-device-aio-iothubdeviceclient-create-from-connection-string
-connection_string = "<device-connection-string-in-iothub>"
-device_client = IoTHubDeviceClient.create_from_connection_string(connection_string)
-device_client.connect()
+# connection_string = "<device-connection-string-in-iothub>"
+# device_client = IoTHubDeviceClient.create_from_connection_string(connection_string)
+# device_client.connect()
 
 # Connect to IoT Hub
 device_client.connect()
