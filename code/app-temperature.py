@@ -29,7 +29,6 @@ from azure.iot.device import Message
     ## https://learn.microsoft.com/en-us/python/api/azure-iot-device/azure.iot.device.aio.iothubdeviceclient?view=azure-python#azure-iot-device-aio-iothubdeviceclient-create-from-connection-string
 # connection_string = "<device-connection-string-in-iothub>"
 # device_client = IoTHubDeviceClient.create_from_connection_string(connection_string)
-# device_client.connect()
 
 # Connect to IoT Hub
 device_client.connect()
