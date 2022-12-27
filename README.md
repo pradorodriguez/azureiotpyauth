@@ -27,7 +27,7 @@
 
 ### Application Code
 
-* [The code is located in "code/app-temperature.py"]
+* [The code is located in "code/app-temperature.py"](https://github.com/pradorodriguez/azureiotpyauth/blob/master/code/app-temperature.py)
 
 ### Python Libraries
 
